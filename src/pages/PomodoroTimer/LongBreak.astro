@@ -1,0 +1,11 @@
+---
+import Template from '../../templates/Template.astro';
+import PomodoroLongBreak from '../../components/PomodoroLongBreak';
+import PomodoroTemplate from '../../templates/PomodoroTemplate.astro';
+---
+
+<Template current="PomodoroTimer">
+  <PomodoroTemplate current="LongBreak">
+    <PomodoroLongBreak client:load />
+  </PomodoroTemplate>
+</Template>

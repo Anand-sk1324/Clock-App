@@ -1,0 +1,8 @@
+---
+import Template from '../templates/Template.astro';
+import StopWatchComponent from '../components/StopWatchComponent.tsx';
+---
+
+<Template current="StopWatch">
+  <StopWatchComponent client:only />
+</Template>

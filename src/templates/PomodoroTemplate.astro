@@ -1,0 +1,33 @@
+---
+const { current } = Astro.props;
+---
+
+<div class="dark:bg-gray-500/5 p-4">
+  <ul class="flex gap-5 mb-3">
+    <li>
+      <a
+        href="/PomodoroTimer/Work"
+        class={current === 'Work' || current === '/' ? 'text-accent' : ''}
+        >Work</a
+      >
+    </li>
+    <li>
+      <a
+        href="/PomodoroTimer/ShortBreak"
+        class={current === 'ShortBreak' ? 'text-accent' : ''}>ShortBreak</a
+      >
+    </li>
+    <li>
+      <a
+        href="/PomodoroTimer/LongBreak"
+        class={current === 'LongBreak' ? 'text-accent' : ''}>LongBreak</a
+      >
+    </li>
+  </ul>
+
+  <div
+    class="min-h-40 shadow-sm dark:bg-dark-primary flex flex-col justify-center items-center gap-6"
+  >
+    <slot />
+  </div>
+</div>

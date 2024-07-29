@@ -1,0 +1,8 @@
+---
+import Template from '../templates/Template.astro';
+import TimerComponent from '../components/TimerComponent.tsx';
+---
+
+<Template current="Timer">
+  <TimerComponent client:only />
+</Template>

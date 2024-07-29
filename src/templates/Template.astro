@@ -1,0 +1,50 @@
+---
+const { current } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro</title>
+  </head>
+  <body
+    class="bg-white text-black dark:bg-dark-primary dark:text-dark-secondary min-h-screen font-mono flex flex-col"
+  >
+    <nav>
+      <ul class="flex py-4 mx-auto w-fit space-x-8">
+        <li class={current === '/' && 'text-accent'}><a href="/">Home</a></li>
+        <li class={current === 'StopWatch' && 'text-accent'}>
+          <a href="/StopWatch">StopWatch</a>
+        </li>
+        <li class={current === 'Timer' && 'text-accent'}>
+          <a href="/Timer">Timer</a>
+        </li>
+        <li class={current === 'PomodoroTimer' && 'text-accent'}>
+          <a href="/PomodoroTimer">PomodoroTimer</a>
+        </li>
+      </ul>
+    </nav>
+    <div
+      class="w-fit h-full mx-auto my-10 flex-grow flex flex-col justify-center items-center"
+    >
+      <slot />
+    </div>
+  </body>
+</html>
+
+<style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer base {
+    input[type='number']::-webkit-inner-spin-button,
+    input[type='number']::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+</style>

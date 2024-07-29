@@ -1,0 +1,11 @@
+---
+import Template from '../../templates/Template.astro';
+import PomodoroWork from '../../components/PomodoroWork';
+import PomodoroTemplate from '../../templates/PomodoroTemplate.astro';
+---
+
+<Template current="PomodoroTimer">
+  <PomodoroTemplate current="/">
+    <PomodoroWork client:only />
+  </PomodoroTemplate>
+</Template>

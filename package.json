@@ -1,5 +1,5 @@
 {
-  "name": "",
+  "name": "Clock-App",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -7,7 +7,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clean": "rm -rf dist",
+    "clean:win": "rmdir /s /q dist"
   },
   "dependencies": {
     "@astrojs/react": "^3.6.0",

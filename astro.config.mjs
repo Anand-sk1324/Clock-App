@@ -6,6 +6,5 @@ import tailwind from "@astrojs/tailwind";
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
-  site: 'https://anand-sk1324.github.io/Clock-App',
-  base: 'Clock-App',
+  site: 'https://anand-sk1324.github.io/Clock-App'
 });

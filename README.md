@@ -1,5 +1,8 @@
 # Simple Clock App
 
+## Preview 
+![preview of the app](./public/preview1.png)
+
 ## Tech Stack
 - 🚀 Astro
 - 🧪 React

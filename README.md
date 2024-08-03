@@ -1,6 +1,7 @@
 # Simple Clock App
 
 ## Preview 
+🚀🚀🚀Site Live on [render](https://clock-app-0z52.onrender.com/)
 ![preview of the app](./public/preview1.png)
 
 ## Tech Stack
@@ -26,6 +27,6 @@
   npm install
   npm run dev
   ```
-- That's it your project should be run in [http://localhost:4321/](http://localhost:4321/)
+- That's it your project should be run in http://localhost:4321/
 
 Note: Feel free to contact for any issues: anand.sk1324@gmail.com
